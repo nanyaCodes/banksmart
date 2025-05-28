@@ -761,14 +761,14 @@ align-items: center;
 
  .logo{
   position: absolute;
-  top: 410px;
+  top: 420px;
   left: 70px;
  }
 
   .card {
     position: static;
     width: 50%;
-    height: 295px;
+    height: 290px;
     margin-top: 30px;
     margin-left: 80px;
   }
@@ -776,7 +776,7 @@ align-items: center;
   .money-section {
     position: absolute;
     justify-content: center;
-    bottom: -350px;
+    bottom: -380px;
     right: 90px;
     text-align: center;
     display: flex;
@@ -793,7 +793,7 @@ align-items: center;
   }
 
   .best{
-    margin-top: 380px;
+    margin-top: 390px;
   }
 
   .see-text{
@@ -1062,6 +1062,7 @@ align-items: center;
   .money-section {
     justify-content: flex-start;
     margin-left: -100px;
+
   }
     
   .service-section .row {
