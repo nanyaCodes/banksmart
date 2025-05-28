@@ -493,7 +493,7 @@ align-items: center;
     
   .staycation{
     width: 280px;
-    height: 158px;
+    height: 178px;
     border: 2px solid #F0F0F4;
     background-color: #0000ff;
     margin-top: 145px;
@@ -687,7 +687,7 @@ align-items: center;
   .nav-links {   
     color: #0000ff;
     position: fixed;
-    top: 68px;
+    top: 72px;
     right: -285px;
     height: 100vh;
     width: 240px;
@@ -767,7 +767,7 @@ align-items: center;
   .card {
     position: static;
     width: 50%;
-    height: 230px;
+    height: 290px;
     margin-top: 30px;
     margin-left: 80px;
   }
@@ -977,38 +977,70 @@ align-items: center;
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px)  {
-  .navbar-nav {
-    padding-right: 0;
-    justify-content: center;
+ 
+    .navbar {
+    padding: 1rem 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-links {   
+    color: #0000ff;
+    position: fixed;
+    top: 68px;
+    right: -285px;
+    height: 100vh;
+    width: 240px;
+    z-index: 99;
+    background-color: hsla(0, 19%, 95%, 0.943);
+    backdrop-filter: blur(15px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 17px;
-    position: absolute;
-    z-index: 50;
-    background-color: #eeed;
-    backdrop-filter: blur(10px);
-    width: 80vw;
-    border-radius: 20px;
-    padding: 0 0 20px 0;
+    justify-content: flex-start;
+    transition: right 1.5s ease-in-out;
   }
 
-  .nav-box{
-    position: relative;
-    z-index: 20;
-    top: 0;
-    width: 96vw;
-    padding: 0 0 20px 0;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    transition: box-shadow 0.4s ease;  
-
+  .searching{
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 60px;
+  }
+  .btn-access{
+    padding: 3px 20px;
+    font-size: 5px;
   }
 
-  .searching {
-  margin-top: 0;
+  .nav-links a{
+    color: #000000;
+    font-size: 18px;
+    margin-top: 10px;
   }
-    
+
+  .nav-links.active {
+   right: 0;
+   transition: right 1.5s ease-in-out;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+  }
+
   
   .hero {
   flex-direction: row;
