@@ -493,10 +493,10 @@ align-items: center;
     
   .staycation{
     width: 280px;
-    height: 178px;
+    height: 158px;
     border: 2px solid #F0F0F4;
     background-color: #0000ff;
-    margin-top: 145px;
+    margin-top: 140px;
     box-shadow: 0px 4px 2px 0px #0000004D;
     align-items: center;
     text-align: center;
@@ -558,7 +558,7 @@ align-items: center;
 
   .fashion-pose{
     width: 280px;
-    height: 160px;
+    height: 159px;
     border: 2px solid #F0F0F4;
     background-color: #fff;
     margin-top: 134px;
@@ -727,7 +727,7 @@ align-items: center;
     margin: 1rem 0;
   }
 
-  .hero {
+  .hero{
     height: 100vh;
     padding: 40px 20px;
     margin-bottom: 100px;
@@ -903,6 +903,10 @@ align-items: center;
 
   .startups p{
     font-size: 14px;
+  }
+
+  .staycation{
+    height: 165px;
   }
 
   .childplay, .yoga, .yoga-one {
@@ -1135,6 +1139,9 @@ align-items: center;
   }
   .mobile-box{
     margin-top: 30px;
+  }
+  .staycation{
+    height: 165px;
   }
 
   .childplay, .yoga-one {
