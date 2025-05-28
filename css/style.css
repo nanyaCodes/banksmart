@@ -692,7 +692,7 @@ align-items: center;
     height: 100vh;
     width: 240px;
     z-index: 99;
-    background-color: hsla(0, 19%, 95%, 0.943);
+    background-color: #fff;
     backdrop-filter: blur(15px);
     display: flex;
     flex-direction: column;
@@ -906,7 +906,7 @@ align-items: center;
   }
 
   .staycation{
-    height: 165px;
+    height: 175px;
   }
 
   .childplay, .yoga, .yoga-one {
@@ -1011,7 +1011,7 @@ align-items: center;
     height: 100vh;
     width: 240px;
     z-index: 99;
-    background-color: hsla(0, 19%, 95%, 0.943);
+    background-color: #fff;
     backdrop-filter: blur(15px);
     display: flex;
     flex-direction: column;
@@ -1141,7 +1141,7 @@ align-items: center;
     margin-top: 30px;
   }
   .staycation{
-    height: 165px;
+    height: 175px;
   }
 
   .childplay, .yoga-one {
