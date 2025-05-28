@@ -687,7 +687,7 @@ align-items: center;
   .nav-links {   
     color: #0000ff;
     position: fixed;
-    top: 72px;
+    top: 78px;
     right: -285px;
     height: 100vh;
     width: 240px;
@@ -736,13 +736,14 @@ align-items: center;
 
   .hero-text{
     padding: 0;
-    margin-top: 30px;
+    margin-top: 50px;
     text-align: center;
   }
 
   .hero-text h2 {
     font-size: 35px;
     line-height: 40px;
+    margin-top: 50px;
   }
 
   .hero-text p {
@@ -760,14 +761,14 @@ align-items: center;
 
  .logo{
   position: absolute;
-  top: 360px;
-  left: 65px;
+  top: 365px;
+  left: 69px;
  }
 
   .card {
     position: static;
     width: 50%;
-    height: 290px;
+    height: 310px;
     margin-top: 30px;
     margin-left: 80px;
   }
@@ -792,7 +793,7 @@ align-items: center;
   }
 
   .best{
-    margin-top: 330px;
+    margin-top: 380px;
   }
 
   .see-text{
@@ -831,7 +832,7 @@ align-items: center;
   }
 
   .accent {
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 500;
     justify-content: center;
     display: flex;
@@ -1092,9 +1093,7 @@ align-items: center;
   .button-group {
     justify-content: flex-start;
   }
-
-
-      
+   
 
   .news-section .row {
     display: flex;
