@@ -775,7 +775,7 @@ align-items: center;
   .money-section {
     position: absolute;
     justify-content: center;
-    bottom: -320px;
+    bottom: -350px;
     right: 90px;
     text-align: center;
     display: flex;
