@@ -8,29 +8,55 @@ body, p, h3,h5, h4, h6{
   font-family: poppins;
 }
 
- .navbar-nav{
-  padding-right: 50px;
-  font-weight: 700;
-  color: #000000;
-  transition: top 0.3s ease-in-out;
-
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99;
+  padding: 0.1rem;
+  transition: all 0.3s ease;
+  align-items: center;
 }
 
-.navbar-nav a {
-  position: relative;
-  transition: color 0.3s ease-in-out;
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbar-nav a::before {
-  content: "";
-  position: absolute;
-  background-color: white;
-  transition: width 0.3s ease, left 0.3s ease;
-} 
+.nav-links {
+display: flex;
+align-items: center;
+}
 
-.navbar-nav a:hover {
+.nav-links li {
+  margin-left: 2rem;
+  list-style-type: none;
+}
+
+.nav-links a {
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
   color: #0000ff;
-} 
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #000000;
+  transition: all 0.3s ease;
+}
 
 .btn-access{
   background-color: #0000ff;
@@ -43,6 +69,7 @@ body, p, h3,h5, h4, h6{
 
 .searching{
   gap: 10px;
+  margin-top: 5px;
   align-items: center;
   padding-left: 70px;
 }
@@ -55,7 +82,7 @@ body, p, h3,h5, h4, h6{
   background-repeat: no-repeat !important;
   position: relative;
   background-position: center;
-  margin-bottom: 150px;
+  margin-bottom: 130px;
 
 }
 
@@ -111,7 +138,7 @@ body, p, h3,h5, h4, h6{
 }
 .logo{
   position: absolute;
-  top: 37px;
+  top: 42px;
   width: 60px;
   right: 105px;
 }
@@ -123,7 +150,7 @@ body, p, h3,h5, h4, h6{
   padding: 15px;
   border-radius: 0%;
   right: 0;
-  top: 70px;
+  top: 80px;
 }
 .cash-section{
   box-shadow: 0px 4px 2px 0px #0000004D;
@@ -205,7 +232,7 @@ body, p, h3,h5, h4, h6{
 .money-section{
   position: absolute;
   bottom: -70px;
-  margin-left: 120px;
+  margin-left: 60px;
 } 
 
  .money-section {
@@ -227,18 +254,18 @@ body, p, h3,h5, h4, h6{
 }
 
 @keyframes boxAnimation {
-    0% {
-      transform: translate(0, 0) scale(1); 
-      background-color: #fff; 
-    }
-     30% {
-      transform: translate(20px, 20px) scale(0.8);
-      background-color: #fff; 
-    } 
-    100% {
-      transform: translate(0, 0) scale(1); 
-      background-color: #fff; 
-    }
+  0% {
+    transform: translate(0, 0) scale(1); 
+    background-color: #fff; 
+  }
+  30% {
+    transform: translate(20px, 20px) scale(0.8);
+    background-color: #fff; 
+  } 
+  100% {
+    transform: translate(0, 0) scale(1); 
+    background-color: #fff; 
+  }
 }
 .service{
   color: #0000ff;
@@ -285,6 +312,7 @@ body, p, h3,h5, h4, h6{
 }
 .mobile-box p{
   padding-top: 18px;
+  text-align: center;
 }
 .online-box h5{
   padding-top: 15px;
@@ -292,6 +320,7 @@ body, p, h3,h5, h4, h6{
 }
 .online-box p{
   padding-top: 18px;
+  text-align: center;
 }
 
 .two-face{
@@ -312,8 +341,7 @@ body, p, h3,h5, h4, h6{
 
 .accent{
   font-size: 39px;
-  justify-content:center;
-  display: flex;
+  font-weight: 600;
 }
 
 .button-group{
@@ -379,17 +407,17 @@ body, p, h3,h5, h4, h6{
 
 }
 
- .sustain {
-    position: relative;
-    animation: gradientAnimation 6s ease infinite;
-  }
+.sustain {
+  position: relative;
+  animation: gradientAnimation 6s ease infinite;
+}
 
-  .sustain-text{
-    position: absolute;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-  }
+.sustain-text{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
 
   @keyframes gradientAnimation {
     0% {
@@ -465,7 +493,7 @@ body, p, h3,h5, h4, h6{
     
   .staycation{
     width: 280px;
-    height: 155px;
+    height: 158px;
     border: 2px solid #F0F0F4;
     background-color: #0000ff;
     margin-top: 145px;
@@ -502,7 +530,7 @@ body, p, h3,h5, h4, h6{
 
   .yoga-pose{
     width: 280px;
-    height: 155px;
+    height: 158px;
     border: 2px solid #F0F0F4;
     background-color: #fff;
     margin-top: 139px;
@@ -636,47 +664,67 @@ body, p, h3,h5, h4, h6{
 
 /* Mobile styles for screens up to 600px wide */
 @media only screen and (max-width: 600px) {
-   .navbar-nav {
-    padding-right: 0;
-    justify-content: center;
+  .navbar {
+    padding: 1rem 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-links {   
+    color: #0000ff;
+    position: fixed;
+    top: 68px;
+    right: -285px;
+    height: 100vh;
+    width: 240px;
+    z-index: 99;
+    background-color: hsla(0, 19%, 95%, 0.943);
+    backdrop-filter: blur(15px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 17px;
-    position: absolute;
-    z-index: 50;
-    background-color: #eeed;
-    backdrop-filter: blur(10px);
-    width: 94vw;
-    border-radius: 20px;
-    padding: 0 0 20px 0;
+    justify-content: flex-start;
+    transition: right 1.5s ease-in-out;
   }
 
-  .nav-box{
-    position: relative;
-    z-index: 20;
-    top: 0;
-    width: 100vw;
-    padding: 0 0 20px 0;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    transition: box-shadow 0.4s ease;  
-
-  }
-
-  .searching {
-    padding-right: 0;
-    justify-content: center;
-    display: flex;
+  .searching{
+    align-items: flex-start;
     flex-direction: column;
-    align-items: center;
-    font-size: 17px;
+    justify-content: flex-start;
     margin-right: 60px;
-
+  }
+  .btn-access{
+    padding: 3px 20px;
+    font-size: 5px;
   }
 
-  .navbar-toggler{
-    transition: box;
+  .nav-links a{
+    color: #000000;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .nav-links.active {
+   right: 0;
+   transition: right 1.5s ease-in-out;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
   }
 
   .hero {
@@ -688,6 +736,7 @@ body, p, h3,h5, h4, h6{
 
   .hero-text{
     padding: 0;
+    margin-top: 30px;
     text-align: center;
   }
 
@@ -711,7 +760,7 @@ body, p, h3,h5, h4, h6{
 
  .logo{
   position: absolute;
-  top: 340px;
+  top: 360px;
   left: 65px;
  }
 
@@ -726,10 +775,10 @@ body, p, h3,h5, h4, h6{
   .money-section {
     position: absolute;
     justify-content: center;
-    bottom: -310px;
+    bottom: -320px;
     right: 90px;
     text-align: center;
-    display: flex; 
+    display: flex;
   }
 
   .cash-section, .withdraw-section, .credit-section {
@@ -781,9 +830,12 @@ body, p, h3,h5, h4, h6{
     padding: 40px 20px;
   }
 
-
   .accent {
-    font-size: 22px;
+    font-size: 19px;
+    font-weight: 500;
+    justify-content: center;
+    display: flex;
+    
   }
 
   .account-text p {
@@ -793,7 +845,9 @@ body, p, h3,h5, h4, h6{
     margin-left: 18px;
     height: 150px;
     align-items: center;
-    text-align: flex-start;
+    justify-content: center;
+    display: flex;
+    text-align: justify;
   
   }
 
@@ -1006,6 +1060,8 @@ body, p, h3,h5, h4, h6{
   .button-group {
     justify-content: flex-start;
   }
+
+
       
 
   .news-section .row {
